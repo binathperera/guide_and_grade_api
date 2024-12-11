@@ -25,7 +25,7 @@ function mainCountdown(){
     if (app.locals.timeRunner==0){
         clearInterval(app.locals.mainTimer);
     }else{
-        time=app.locals.timeRunner--;
+        var time=app.locals.timeRunner--;
         if(time>app.locals.warnTime){
             app.locals.green=true;
             app.locals.yellow=false;
